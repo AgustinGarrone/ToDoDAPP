@@ -1,0 +1,25 @@
+en "bs-config.json" le decimos a lite server que puerto ejecutar y que carpeta. En este caso la carpeta client.
+
+en APP JS conectamos back con front. En UI solo la interfaz de usuario.
+PASOS:
+1- truffle init
+2-crear proyecto
+3-Compile/Deploy
+4-test
+5-"Npm install --save-dev lite-server" LiteServer
+6- FrontEnd
+7- Hacemos un objeto APP para requerir metamask y instanciar contratos
+8- en bs-config.json tenemos que servir tambien el contenido de build/contracts. es decir,m los contratos en json 
+para interactuar con ellos.
+9- hacemos un fetch loadContracts en el objeto app para cargar contratos.
+10- instalamos Npm i @truffle/contracts para  interactuar con truffle en el front
+11- añadimos truffle contracts como script en el html
+12- creamos las funciones de solidity en app.js similar a hacer los test y las ponemoos en ui.js
+13- debemos indicarle a la funcion del app.js desde que address se ejecuta la funcion. Por lo que debemos
+hacer la variable account en main.js que la indique.
+
+
+EL ERROR QUE TENIA ES QUE NO EMITÍ EVENTO. LOS EVENTOS SE REGISTRAN EN LOS LOGS DE LAS FUNCIONES 
+PARECE
+
+cuando un cambio no ande y debamos migrar de nuevo. Hacer TRUFFLE MIGRATE --RESET
